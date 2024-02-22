@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen w-screen dark:bg-slate-950 flex justify-center items-center">
+  <div class="h-screen w-screen dark:bg-[#0b0b0b] flex justify-center items-center">
     <button @click="toggleTheme">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="theme-icon fill-[#FFF]"
         v-if="$colorMode.value == 'dark'">
@@ -24,16 +24,6 @@ const toggleTheme = () => {
 </script>
 
 <style>
-/* body {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.8);
-}
-
-.dark body {
-  background-color: #091a28;
-  color: #ebf4f1;
-} */
-
 .theme-icon {
   @apply w-10 h-10 cursor-pointer transition-transform duration-100;
 }
