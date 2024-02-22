@@ -9,13 +9,14 @@ Make sure to install the dependencies:
 docker compose run --service-ports app ash
 ```
 
+**Inside the container or on your terminal:**
 ```bash
 yarn
 ```
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
+**Start the development server on `http://localhost:3000`:**
 
 ```bash
 yarn dev
