@@ -10,6 +10,13 @@ export default {
   ],
   darkMode: 'class',
   theme: {
+    colors: {
+      darkMode: {
+        main: '#0b0b0b',
+      },
+      white: '#FFF',
+      black: '#000',
+    },
     extend: {},
   },
   plugins: [],
