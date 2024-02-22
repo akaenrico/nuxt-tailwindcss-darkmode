@@ -4,9 +4,13 @@
 
 Make sure to install the dependencies:
 
+*Optional:*
 ```bash
-# yarn
-yarn install
+docker compose run --service-ports app ash
+```
+
+```bash
+yarn
 ```
 
 ## Development Server
@@ -14,6 +18,5 @@ yarn install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# yarn
 yarn dev
 ```

@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  base: &base
+    hostname: base
+    image: node:20.11.1-alpine
+
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/home/node/app
+    working_dir: /home/node/app
+
+  app:
+    <<: *base
+    hostname: app
+    ports:
+      - "3000:3000"
